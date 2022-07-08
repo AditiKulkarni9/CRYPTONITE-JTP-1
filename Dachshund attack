@@ -1,0 +1,4 @@
+after connecting to nc mercury.picoctf.net 31133 it gave me the value of c , n ,e  which means its obviously encrypted using rsa
+in the image of the dachshund dog given in the image , i uploaded it on google and typed dachshund dogs + rsa names which showed weiner 
+then i typed wiener + rsa which showed wiener's rsa attack 
+since there is already a predesigned code for this rsa "owiener" i ran it using that
