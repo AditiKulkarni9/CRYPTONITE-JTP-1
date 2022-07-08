@@ -1,0 +1,18 @@
+since the formatting specifier was not given in print(user_buff)
+i tried %p %x %s , after inputting multiple %x%x i got a hexdump which i converted to character
+i wrote this python script for it 
+
+jumbflag ="ocip{FTC0l_I4_t5m_ll0m_y_y3nbc7ceac6}" #stonks
+words = []
+for i in range(0,len(jumbflag),4):
+  divide_in_four = jumbflag[i:]
+  if len(divide_in_four)>4:
+    divide_in_four = divide_in_four[0:4]
+
+  words.append(''.join(divide_in_four))
+
+flag =" "
+for word in words:
+  flag = flag + word[::-1]
+
+print(flag)
