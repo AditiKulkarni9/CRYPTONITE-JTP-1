@@ -1,0 +1,9 @@
+I played around twith a numbers for a bit and found that putting negative numbers in how many do you want category added more coins , so i put enough negatives to get 140 coins 
+and got the flag which was an ascii text so i used this python code to decode it 
+
+text = "112 105 99 111 67 84 70 123 98 52 100 95 98 114 111 103 114 97 109 109 101 114 95 98 97 54 98 56 99 100 102 125"
+numbers = text.split(" ")
+flag = " "
+for num in numbers:
+    flag += chr(int(num))
+print(flag)
